@@ -38,11 +38,11 @@ export const createCheckoutSession = async (
       customerId = customers.data[0].id;
     }
 
-    // const baseUrl =
-    //   process.env.NODE_ENV === 'production'
-    //     ? `${process.env.VERCEL_URL}`
-    //     : `${process.env.NEXT_PUBLIC_BASE_URL}`;
-    const baseUrl = process.env.VERCEL_URL;
+    const baseUrl =
+      process.env.NODE_ENV === 'production'
+        ? `${process.env.VERCEL_URL}`
+        : `${process.env.NEXT_PUBLIC_BASE_URL}`;
+    // const baseUrl = process.env.VERCEL_URL;
     
         console.log('base url =====>', baseUrl)
 
